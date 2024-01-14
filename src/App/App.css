@@ -1,0 +1,38 @@
+:root {
+  --btnWhite: #fff;
+  --btnBlack: #000000;
+  --btnAqua: #5bc0be;
+  --btnAquaHover: #53b2b0ee;
+  --btnTransparent: rgba(255, 255, 255, 0);
+  --btnTransparentActive: rgba(255, 255, 255, 0.077);
+  
+  --navWhite: #dde6f6c8;
+  /* --navWhite: #ffffffc8; */
+  --navHover: rgba(27, 31, 10, 0.06);;
+  
+  --white: #fff;
+  --white-coffe: rgba(27, 31, 10, 0.06);
+  --black: #000000;
+  --junior: #3b506a;
+
+  /* calc(min + (max-min) * (100vw / (max-window))) */
+  --size84-34: calc(2.125rem + 50 * (100vw / 1930));
+  --size-h1: calc(1.75rem + 36 * (100vw / 1930));
+  --size-h2: calc(1.5rem + 8 * (100vw / 1930));
+  --size-h3: calc(1.25rem + 4 * (100vw / 1930));
+  --size-p: calc(1rem + 6 * (100vw / 1930));
+}
+
+@media (max-width: 767px){
+  :root {
+    /* calc(min + ((max-min) + (max-min) * 0.7) * (100vw / (max-window))) */
+    /* --size84-34: calc(2.125rem + (50 + 50 * 0.7) * ((100vw) / 1930)) */
+    /* --sizeh2: calc(1.125rem + (8 + 8 * 0.7) * (100vw / 1930))
+    --sizeP: calc(1rem + (4 + 4 * 0.7) * (100vw / 1930)) */
+  }
+}
+
+.App {
+  text-align: center;
+
+}

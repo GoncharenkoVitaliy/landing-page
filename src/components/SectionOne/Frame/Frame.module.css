@@ -1,0 +1,38 @@
+.video_container {
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #4319a6;
+}
+.mbr_background_video {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  /* margin-top: 0px; */
+  /* max-width: initial; */
+  transition-property: opacity;
+  transition-duration: 1000ms;
+  pointer-events: none;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.2);
+}
+@media (min-aspect-ratio: 16/9) {
+  .video-container iframe {
+    /* height = 100 * (9 / 16) = 56.25 */
+    height: 56.25vw;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video-container iframe {
+    /* width = 100 / (9 / 16) = 177.777777 */
+    width: 177.78vh;
+  }
+}
+
+/* <iframe class="mbr-background-video" id="ytplayer-3ec7b9" style="margin-top: 0px; max-width: initial; transition-property: opacity; transition-duration: 1000ms; pointer-events: none; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; transform: scale(1.2);" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="Isometric Apps Development Background video | Footage | Screensaver" width="1536" height="864" src="https://www.youtube.com/embed/meH3eZS8oV0?autoplay=1&amp;mute=0&amp;controls=0&amp;enablejsapi=1&amp;allowfullscreen=true&amp;iv_load_policy=3&amp;modestbranding=1&amp;origin=https%3A%2F%2Fai-builder.mobirise.com&amp;rel=0&amp;mode=transparent&amp;showinfo=0&amp;html5=1&amp;version=3&amp;playerapiid=iframe_YTP_1624972482514&amp;widgetid=1"></iframe> */

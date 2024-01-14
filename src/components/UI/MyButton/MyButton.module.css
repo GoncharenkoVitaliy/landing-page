@@ -1,0 +1,28 @@
+.btn {
+    font-size: var(--size-h2);
+    font-weight: bold;
+    padding: 25px;
+    margin: 0px;
+    border-radius: 50px;
+    text-wrap: nowrap;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.btn:active {
+    scale: 1.01;
+}
+.btn_white {
+    color: var(--btnWhite);
+    background-color: var(--btnTransparent);
+    border: 1px solid var(--btnWhite)
+}
+.btn_white:hover {
+    background-color: var(--btnTransparentActive);
+}
+.btn_aqua {
+    background-color: var(--btnAqua);
+    color: var(--btnBlack);
+}
+.btn_aqua:hover {
+    background-color: var(--btnAquaHover);
+}
