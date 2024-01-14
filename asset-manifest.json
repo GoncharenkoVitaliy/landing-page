@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/landing-page/static/css/main.66b9efb1.css",
+    "main.js": "/landing-page/static/js/main.cec7965d.js",
+    "static/media/photo-005-5.jpeg": "/landing-page/static/media/photo-005-5.b8b05ee33730ea53cb8e.jpeg",
+    "static/media/photo-006-3.jpeg": "/landing-page/static/media/photo-006-3.4ac314505ceb9b528821.jpeg",
+    "static/media/photo-003.jpeg": "/landing-page/static/media/photo-003.d7fdfd3527c0762e86dd.jpeg",
+    "static/media/photo-001.jpeg": "/landing-page/static/media/photo-001.6e0d11f9a7b7f1c1f9ec.jpeg",
+    "static/media/photo-005-7.jpeg": "/landing-page/static/media/photo-005-7.a4a44d4d4719bfe092c1.jpeg",
+    "static/media/photo-006-1.jpeg": "/landing-page/static/media/photo-006-1.5a07904412b2d04ff120.jpeg",
+    "static/media/photo-005-3.jpeg": "/landing-page/static/media/photo-005-3.841e0cf16bb676d0c0ce.jpeg",
+    "static/media/photo-004.jpeg": "/landing-page/static/media/photo-004.4c8bacce546369ac4427.jpeg",
+    "static/media/photo-005-2.jpeg": "/landing-page/static/media/photo-005-2.b157b6b5fafe994c2263.jpeg",
+    "static/media/photo-006-4.jpeg": "/landing-page/static/media/photo-006-4.bb7ac6b63da45a286e5e.jpeg",
+    "static/media/photo-006-2.jpeg": "/landing-page/static/media/photo-006-2.a7c3098ac06389bdb38c.jpeg",
+    "static/media/photo-005-4.jpeg": "/landing-page/static/media/photo-005-4.57438c0a778971690210.jpeg",
+    "static/media/photo-005-8.jpeg": "/landing-page/static/media/photo-005-8.70fd5f9f2ab2e5414c09.jpeg",
+    "static/media/photo-005-6.jpeg": "/landing-page/static/media/photo-005-6.38b95c7232abc6c1c681.jpeg",
+    "static/media/photo-005-1.jpeg": "/landing-page/static/media/photo-005-1.a1196308144aa49456e6.jpeg",
+    "index.html": "/landing-page/index.html",
+    "main.66b9efb1.css.map": "/landing-page/static/css/main.66b9efb1.css.map",
+    "main.cec7965d.js.map": "/landing-page/static/js/main.cec7965d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66b9efb1.css",
+    "static/js/main.cec7965d.js"
+  ]
+}
