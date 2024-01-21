@@ -20,24 +20,18 @@ export default function Navbar() {
         <p className={styles.magic}>Frontend Magic</p>
       </div>
       <div className={open}>
-
-
-
         <ul className={styles.aside}>
-          <li className={styles.aside__menu}>
+          <li className={styles.aside__menu} onClick={() => setMenu(false)}>
             <Link to="/">Обомне</Link>
           </li>
-          <li className={styles.aside__menu}>
+          <li className={styles.aside__menu} onClick={() => setMenu(false)}>
             <Link to="/contact">Связь со мной</Link>
           </li>
-          <li className={styles.aside__menu}>
+          <li className={styles.aside__menu} onClick={() => setMenu(false)}>
             <Link to="/myWork">Мои проекты</Link>
           </li>
         </ul>
 
-
-
-        
         <div className={styles.btn_nav}>
           <MyA
             target="_blank"

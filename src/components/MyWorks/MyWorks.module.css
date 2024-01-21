@@ -97,7 +97,7 @@
 }
 @media (max-width: 999px) {
   .wrapper {
-    padding: 2rem 2rem;
+    padding: 8rem 2rem;
   }
   .item {
     flex: 0 1 50%;
