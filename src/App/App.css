@@ -7,15 +7,14 @@
   --btnTransparentActive: rgba(255, 255, 255, 0.077);
   
   --navWhite: #dde6f6e7;
-  /* --navWhite: #ffffffc8; */
   --navHover: rgba(27, 31, 10, 0.06);;
   
   --white: #fff;
   --white-coffe: rgba(27, 31, 10, 0.06);
   --black: #000000;
   --front: aqua;
-  /* --frontnd: #04fdf5; */
-  /* calc(min + (max-min) * (100vw / (max-window))) */
+
+
   --size84-34: calc(2.125rem + 50 * (100vw / 1930));
   --size-h1: calc(1.75rem + 36 * (100vw / 1930));
   --size-h2: calc(1.5rem + 8 * (100vw / 1930));

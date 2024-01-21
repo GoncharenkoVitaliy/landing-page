@@ -1,27 +1,24 @@
-import Navbar from '../components/Navbar/Navbar';
-import AboutStec from '../components/AboutStec/AboutStec';
-import SectionOne from '../components/SectionOne/SectionOne';
-import './App.css';
-import MagicGallery from '../components/MagicGallery/MagicGallery';
-import News from '../components/News/News';
-import Questions from '../components/Questions/Questions';
-import Footer from '../components/Footer/Footer';
-import ContactMe from '../components/ContactMe/ContactMe'
-import MyWorks from '../components/MyWorks/MyWorks';
+import Navbar from "../components/Navbar/Navbar";
+import "./App.css";
+import Footer from "../components/Footer/Footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "../components/pages/Home";
+import MyWorksPages from "../components/pages/MyWorksPages";
+import ContactMePages from "../components/pages/ContactMePages";
+import NotFound from "../components/pages/NotFound/NotFound";
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <Navbar />
-      <SectionOne/>
-      <AboutStec />
-      <MyWorks />
-      <MagicGallery />
-      <News />
-      <Questions />
-      <ContactMe />
+      <Routes>
+        <Route path="*" element={<Home />} />
+        <Route path="myWork" element={<MyWorksPages />} />
+        <Route path="contact" element={<ContactMePages />} />
+        {/* <Route path="/*" element={<NotFound />} /> */}
+      </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

@@ -81,13 +81,32 @@
   right: 40px;
   transition: all 0.5s ease-in-out;
 }
+@media (max-width: 1135px) {
+  .aside_wrapper {
+    width: 72%;
+  }
+  .aside__menu {
+    text-wrap: wrap;
+  }
+}
+@media (max-width: 1092px) {
+  .magic {
+    text-wrap: wrap;
+    padding-right: 10px;
+    width: 100px;
+  }
+}
 @media (max-width: 1065px) {
   .aside_wrapper {
     width: 80%;
   }
-  .magic {
-    text-wrap: wrap;
-    width: 150px;
+}
+@media (max-width: 1042px) {
+  .aside__menu {
+    padding: 10px;
+  }
+  .aside__menu:first-child {
+    padding-left: 20px;
   }
 }
 @media (max-width: 1024px) {
