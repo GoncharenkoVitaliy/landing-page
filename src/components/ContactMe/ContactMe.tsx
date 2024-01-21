@@ -7,7 +7,7 @@ import emailjs from "emailjs-com";
 interface iForm {
   name: string;
   email: string;
-  phone: number;
+  phone: string;
   subject: string;
   message: string;
 }
@@ -19,48 +19,60 @@ export default function ContactMe() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const [active, setActive] = useState(true);
-
   const {
     register,
     handleSubmit,
-    clearErrors,
-    reset,
-    formState: { errors },
+    formState: { errors, isValid },
   } = useForm<iForm>({ defaultValues: {} });
 
   const submit: SubmitHandler<iForm> = (data: iForm) => {
-    console.log(data);
+    // console.log(data);
   };
 
-  const isName = (data: any) => {
-    console.log("validate");
-    console.log(data);
+  const isName = (name: string) => {
+    const str = name.trim();
+    if (str !== undefined && str !== "" && str.length > 3) {
+      return true;
+    }
+    return false;
+  };
+  const isEmail = (email: string) => {
+    const str = email.trim();
+    const reg = /^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i;
+    const validateEmail = reg.exec(str);
+    if (str !== undefined && str !== "" && validateEmail) {
+      return true;
+    }
     return false;
   };
 
-  const error: SubmitErrorHandler<iForm> = (data) => {
-    console.log(data);
+  const isPhone = (phone: string) => {
+    const reg = /^[\d\+][\d\(\)\ -]{4,14}\d$/;
+    return reg.test(phone);
+  };
+
+  const error: SubmitErrorHandler<iForm> = (error) => {
     console.log(error);
   };
 
   const sendMail = () => {
-    console.log();
-    let parms = {
-      name: name,
-      email: email,
-      phone: phone,
-      subject: subject,
-      message: message,
-    };
-    emailjs
-      .send("service_bfk61em", "template_cp1wp5w", parms, "HwabuzZpB9X61c76V")
-      .then((response) => {
-        alert("Сообщение отправлено!!");
-      })
-      .catch((error) => {
-        console.error("Error sending email: ", error);
-      });
+    if (isValid) {
+      let parms = {
+        name: name,
+        email: email,
+        phone: phone,
+        subject: subject,
+        message: message,
+      };
+      emailjs
+        .send("service_bfk61em", "template_cp1wp5w", parms, "HwabuzZpB9X61c76V")
+        .then((response) => {
+          alert("Сообщение отправлено!!");
+        })
+        .catch((error) => {
+          console.error("Error sending email: ", error);
+        });
+    }
   };
 
   return (
@@ -71,7 +83,6 @@ export default function ContactMe() {
           <div className={`${styles.input_field} ${styles.box}`}>
             <input
               {...register("name", { required: true, validate: isName })}
-              // aria-invaliad={errors.name ? true : false}
               type="text"
               placeholder="Full Name"
               value={name}
@@ -80,7 +91,7 @@ export default function ContactMe() {
               className={`${styles.form_group}`}
             />
             <input
-              {...register("email", { required: true })}
+              {...register("email", { required: true, validate: isEmail })}
               type="text"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -91,7 +102,7 @@ export default function ContactMe() {
           </div>
           <div className={styles.box}>
             <input
-              {...register("phone")}
+              {...register("phone", { required: true, validate: isPhone })}
               type="text"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
@@ -121,15 +132,9 @@ export default function ContactMe() {
           ></textarea>
         </div>
 
-        <MyButton type="submit" onClick={() => sendMail()} active={active}>
+        <MyButton type="submit" onClick={() => sendMail()} active={true}>
           Отправить сообщение
         </MyButton>
-        {/* <MyButton type="button" onClick={() => clearErrors()} active={active}>
-          Очистить ошибки
-        </MyButton> */}
-        {/* <MyButton type="button" onClick={() => reset()} active={active}>
-          Очистить Форму
-        </MyButton> */}
       </form>
     </section>
   );
