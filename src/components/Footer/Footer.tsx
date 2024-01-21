@@ -14,7 +14,7 @@ export default function Footer() {
   };
 
   return (
-    <div className={styles.footer}>
+    <section className={styles.footer}>
       <h1>Гончаренко Виталий</h1>
       <div className={styles.inner}>
         <div className={styles.phone}>
@@ -48,6 +48,6 @@ export default function Footer() {
           {isCopied && <p className={styles.alert_success}>Скопированно</p>}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
