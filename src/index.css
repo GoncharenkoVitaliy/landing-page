@@ -1,20 +1,20 @@
-body {
-  box-sizing: border-box;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  font-style:normal;
-  line-height: 1.5;
-  font-weight: 400;
-  color: var(--black);
-  position: relative;
-  margin: 0;
+@charset "UTF-8";
+/* /*Обнуление - Кросбраузерность*/
+* {
   padding: 0;
+  margin: 0;
+  border: 0;
 }
-
-button {
-  background-color: transparent;
-  border-color: transparent;
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
+:focus, :active {
+  outline: none;
+}
+a:focus, a:active {
+  outline: none;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -24,9 +24,60 @@ a {
 }
 a :hover {
   color: inherit;
+  text-decoration: none;
 }
-ul, ul li {
-	list-style: none;
+a, a:visited {
+  text-decoration: none;
+}
+nav, footer, header, aside {
+  display: block;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  /* line-height: 1; */
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: var(--size-p);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--black);
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+input, button, textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
 }
 h1 {
   font-size: var(--size-h1);

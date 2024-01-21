@@ -7,3 +7,9 @@
 .date {
   margin: 0;
 }
+.subtitle {
+  padding: 1rem 0;
+}
+.date {
+  padding-bottom: 1rem;
+}

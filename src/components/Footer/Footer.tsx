@@ -1,9 +1,18 @@
 import Github from "../images/svg/Github";
-import Gmail from "../images/svg/Gmail";
+import Yandex from "../images/svg/Yandex";
 import Telegram from "../images/svg/Telegram";
 import styles from "./Footer.module.css";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import { useState } from "react";
 
 export default function Footer() {
+  const [isCopied, setIsCopied] = useState(false);
+
+  const onCopyHandler = () => {
+    setIsCopied(true);
+    setTimeout(() => setIsCopied(false), 2500); // Hide the success message after 2.5 seconds
+  };
+
   return (
     <div className={styles.footer}>
       <h1>Гончаренко Виталий</h1>
@@ -17,15 +26,26 @@ export default function Footer() {
           </a>
         </div>
         <div className={styles.svg}>
-          <a href="#">
+          <a
+            href="https://t.me/VitaliyGoncharenkoPMR"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Telegram className={styles.active} />
           </a>
-          <a href="#">
+          <a
+            href="https://github.com/GoncharenkoVitaliy"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Github className={styles.active} />
           </a>
-          <a href="#">
-            <Gmail className={styles.active} />
-          </a>
+          <CopyToClipboard text="Goncharenko1610@yandex.ru" onCopy={onCopyHandler}>
+            <button>
+              <Yandex className={styles.active} />
+            </button>
+          </CopyToClipboard>
+          {isCopied && <p className={styles.alert_success}>Скопированно</p>}
         </div>
       </div>
     </div>

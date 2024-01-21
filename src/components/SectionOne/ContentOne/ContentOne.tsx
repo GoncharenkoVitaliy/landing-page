@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./ContentOne.module.css";
 import MyButton from "../../UI/MyButton/MyButton";
+import MyA from "../../UI/MyA/MyA";
 
 export default function ContentOne() {
   const handleClick = () => {
@@ -9,14 +10,13 @@ export default function ContentOne() {
 
   return (
     <div className={styles.content_wrapper}>
-      <h1>Junior Frontend</h1>
-      <p className={styles.content_text}>
-        The magic of adaptive layout in HTML, CSS, and JS. Discover the world of
-        React and Redux Toolkit!
-      </p>
-      <MyButton active={false} onClick={handleClick}>
+      {/* <h1>Frontend developer</h1> */}
+      <h1 className={styles.content_text}>
+      Привет, меня зовут Виталий.
+      </h1>
+      <MyA target='_blank' active={false} link="https://github.com/GoncharenkoVitaliy" >
         Погрузиться
-      </MyButton>
+      </MyA>
     </div>
   );
 }

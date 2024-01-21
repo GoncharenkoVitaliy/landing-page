@@ -10,15 +10,15 @@ export default function Github({ className }: any) {
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <title>Github-color</title>
+      <title>Github repositories</title>
       <desc>Created with Sketch.</desc>
       <defs></defs>
       <g
         id="Icons"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <g
           id="Color-"

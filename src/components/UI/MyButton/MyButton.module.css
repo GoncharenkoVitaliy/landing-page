@@ -1,8 +1,13 @@
+button {
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    border-color: transparent;
+  }
 .btn {
     font-size: var(--size-h2);
     font-weight: bold;
-    padding: 25px;
-    margin: 0px;
+    padding: 1.25rem;
+    margin: 0;
     border-radius: 50px;
     text-wrap: nowrap;
     cursor: pointer;
@@ -14,7 +19,8 @@
 .btn_white {
     color: var(--btnWhite);
     background-color: var(--btnTransparent);
-    border: 1px solid var(--btnWhite)
+    border: 1px solid var(--btnWhite);
+    /* backdrop-filter: blur(3px); */
 }
 .btn_white:hover {
     background-color: var(--btnTransparentActive);
@@ -26,3 +32,10 @@
 .btn_aqua:hover {
     background-color: var(--btnAquaHover);
 }
+/* .btn_black {
+    background-color: var(--btnTransparentActive);
+    color: var(--btnBlack);
+}
+.btn_black:hover {
+    background-color: var(--btnAquaHover);
+} */

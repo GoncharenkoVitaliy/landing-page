@@ -1,7 +1,7 @@
 import { useState } from "react";
-import MyButton from "../UI/MyButton/MyButton";
 import styles from "./Navbar.module.css";
 import MenuBurger from "../UI/BurgerMenu/MenuBurger";
+import MyA from "../UI/MyA/MyA";
 
 export default function Navbar() {
   const [click, setClick] = useState(0);
@@ -33,13 +33,13 @@ export default function Navbar() {
             <a href="#">Технологии</a>
           </li>
           <li className={styles.aside__menu}>
-            <a href="#">Отзывы</a>
+            <a href="https://github.com/GoncharenkoVitaliy">Отзывы</a>
           </li>
         </ul>
         <div className={styles.btn_nav}>
-          <MyButton active={true} onClick={clickHandler}>
+          <MyA target="_blank" active={true} link="https://github.com/GoncharenkoVitaliy">
             Узнать больше
-          </MyButton>
+          </MyA>
         </div>
       </div>
       <div onClick={() => setMenu(!menu)} className={styles.toggle_btn}>

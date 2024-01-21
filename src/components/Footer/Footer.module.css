@@ -1,7 +1,6 @@
 .footer {
   display: flex;
   background-color: var(--black);
-  /* background-color: var(--white); */
   color: var(--white);
   padding: 1rem;
   margin: 0;
@@ -12,7 +11,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 2rem;
+}
+.phone {
+  padding-right: 2rem;
 }
 .connection {
   display: flex;
@@ -25,7 +26,8 @@
 }
 .svg {
   display: flex;
-  padding: 1rem;
+  position: relative;
+  transition: all 0.5s ease;
 }
 .active {
   width: 50px;
@@ -33,10 +35,19 @@
   background-color: transparent;
   padding: 0.5rem;
 }
+.alert_success {
+  position: absolute;
+  left: 80px;
+  bottom: 55px;
+  font-size: 14px;
+}
 @media (max-width: 768px) {
   .connection {
     flex-direction: column;
     padding-right: 2rem;
+  }
+  .phone {
+    padding-right: 0;
   }
   .h2Two,
   .h2One {
@@ -44,10 +55,19 @@
   }
 }
 @media (max-width: 557px) {
-    .inner{
-        flex-direction: column;
-    }
+  .footer {
+    padding: 2rem 1.5rem;
+  }
+  .inner {
+    flex-direction: column;
+  }
   .connection {
-    padding-right: 1rem;
+    padding-right: 0rem;
+  }
+  .alert_success {
+    position: absolute;
+    left: 80px;
+    bottom: -15px;
+    font-size: 14px;
   }
 }

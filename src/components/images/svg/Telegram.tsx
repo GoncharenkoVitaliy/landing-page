@@ -8,7 +8,8 @@ export default function Telegram({ className }: any) {
       aria-label="Telegram"
       role="img"
       viewBox="0 0 512 512"
-    >
+      >
+      <title>Telegram messenger</title>
       <rect width="512" height="512" rx="15%" fill="#37aee2" />
       <path fill="#c8daea" d="M199 404c-11 0-10-4-13-14l-32-105 245-144" />
       <path fill="#a9c9dd" d="M199 404c7 0 11-4 16-8l45-43-56-34" />

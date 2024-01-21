@@ -1,0 +1,73 @@
+.contact {
+  background-color: var(--white-coffe);
+  padding: 2rem 0 4rem 0;
+}
+.contact > h1 {
+  padding: 1rem 2rem;
+}
+form {
+  margin: 0 auto;
+  width: 60vw;
+}
+.input_box {
+  margin: 1rem;
+}
+.input_field {
+  display: flex;
+  justify-content: space-between;
+}
+.input_field > :first-child {
+  flex: 0 1 49%;
+}
+.input_field > :last-child {
+  flex: 0 1 49%;
+}
+.box {
+  margin-bottom: 1rem;
+}
+.form_group {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 2rem;
+  margin: 0;
+  border-radius: 40px;
+  font-size: 1rem;
+  width: 100%;
+  border: 1px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px 0px,
+  rgba(0, 0, 0, 0.07) 0px 1px 3px 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
+  transition: all 0.3s ease;
+  background-color: var(--white);
+}
+
+.form_group:hover {
+  border: 2px solid var(--btnAqua);
+}
+@media(max-width: 991px) {
+  form {
+    width: 80vw;
+  }
+}
+@media(max-width: 751px) {
+  form {
+    width: 100vw;
+    padding: 0 2rem;
+  }
+}
+@media(max-width: 631px) {
+  .input_field {
+    display: block;
+  }
+  .input_field > :first-child {
+    margin-bottom: 1rem;
+  }
+}
+@media(max-width: 413px) {
+  form {
+    padding: 0 1rem;
+  }
+  form > :last-child {
+    width: 70vw;
+    text-wrap: wrap;
+  }
+}

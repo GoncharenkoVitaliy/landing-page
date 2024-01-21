@@ -1,0 +1,11 @@
+.form_group > input {
+  box-sizing: border-box;
+  padding: 30px;
+  margin: 0;
+  border-radius: 40px;
+  font-size: 1rem;
+  width: 100%;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px 0px,
+    rgba(0, 0, 0, 0.07) 0px 1px 3px 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
+}

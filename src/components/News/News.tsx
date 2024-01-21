@@ -17,6 +17,7 @@ export default function News() {
                 date={news.date}
                 text={news.text}
                 link={news.link}
+                target={news.target}
               />
             </div>
           );
