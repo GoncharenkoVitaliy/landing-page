@@ -1,6 +1,7 @@
 .contact {
   background-color: var(--white-coffe);
   padding: 2rem 0 4rem 0;
+  width: 100vw;
 }
 .contact > h1 {
   padding: 1rem 2rem;

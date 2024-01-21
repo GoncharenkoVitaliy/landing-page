@@ -3,7 +3,7 @@ import styles from "./MyA.module.css";
 interface iMyA {
   link: string;
   children: string;
-  active: boolean;
+  active?: boolean;
   target: string;
 }
 

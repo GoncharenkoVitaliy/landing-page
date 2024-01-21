@@ -7,6 +7,7 @@ import News from '../components/News/News';
 import Questions from '../components/Questions/Questions';
 import Footer from '../components/Footer/Footer';
 import ContactMe from '../components/ContactMe/ContactMe'
+import MyWorks from '../components/MyWorks/MyWorks';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <SectionOne/>
       <AboutStec />
+      <MyWorks />
       <MagicGallery />
       <News />
       <Questions />
