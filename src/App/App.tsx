@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../components/pages/Home";
 import MyWorksPages from "../components/pages/MyWorksPages";
 import ContactMePages from "../components/pages/ContactMePages";
-import NotFound from "../components/pages/NotFound/NotFound";
+// import NotFound from "../components/pages/NotFound/NotFound";
 
 function App() {
   return (
