@@ -4,7 +4,7 @@ button {
     border-color: transparent;
   }
 .btn {
-    font-size: var(--size-h2);
+    font-size: var(--size-h3);
     font-weight: bold;
     padding: 1.25rem;
     margin: 0;
