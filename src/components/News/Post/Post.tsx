@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import MyA from "../../UI/MyA/MyA";
 import { iArrayNews } from "../arrayNews";
 import styles from "./Post.module.css";
