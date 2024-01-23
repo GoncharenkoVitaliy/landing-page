@@ -18,5 +18,12 @@
     1px 20px 30px rgba(16, 16, 16, 0.3), 1px 25px 50px rgba(16, 16, 16, 0.2);
   margin-bottom: 4rem;
   padding-right: 20px;
-
+}
+@media(max-height: 414px){
+  .content_wrapper {
+    padding: 0 0px 1rem 2rem;
+  }
+  .content_text {
+    margin-bottom: 1.5rem;
+  }
 }

@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  top: 10px;
   margin: 0 auto;
   color: var(--black);
   backdrop-filter: blur(3px);
@@ -201,5 +200,11 @@
   }
   .magic {
     text-wrap: wrap;
+  }
+}
+
+@media(max-height: 414px){
+  .navbar {
+    top: 3rem;
   }
 }

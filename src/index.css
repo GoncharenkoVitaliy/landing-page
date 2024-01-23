@@ -2,9 +2,9 @@
   padding: 0;
   margin: 0;
   border: 0;
+  box-sizing: border-box;
 }
-html,
-body {
+html, body {
   box-sizing: border-box;
   width: 100%;
   min-height: 100vh;
@@ -44,13 +44,10 @@ button {
 a {
   color: inherit;
 }
-a,
-a:visited,
-a:hover {
+a, a:visited, a:hover {
   text-decoration: none;
 }
-a:focus,
-a:active {
+a:focus, a:active {
   outline: none;
 }
 a:not([class]) {
@@ -60,60 +57,28 @@ a:not([class]) {
 img {
   vertical-align: top;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: inherit;
 }
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
+h1, h2, h3, h4, p, figure, blockquote, dl, dd {
   margin: 0;
 }
-ul[role="list"],
-ol[role="list"],
-ul li {
+ul[role="list"], ol[role="list"], ul li {
   list-style: none;
 }
-h1,
-h2,
-h3,
-h4,
-button,
-input,
-label {
+h1, h2, h3, h4, button, input, label {
   line-height: 1.1;
   font-family: inherit;
 }
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   text-wrap: balance;
 }
-nav,
-footer,
-header,
-aside,
-img,
-picture {
+nav, footer, header, aside, img, picture {
   max-width: 100%;
   display: block;
 }
-input,
-button,
-textarea,
-select {
+input, button, textarea, select {
   font-family: inherit;
 }
 textarea:not([rows]) {
@@ -138,6 +103,9 @@ h1 {
 }
 h2 {
   font-size: var(--size-h2);
+}
+h3 {
+  font-size: var(--size-h3);
 }
 p {
   font-size: var(--size-p);
@@ -164,6 +132,8 @@ p {
   --size-h2: calc(1.5rem + 8 * (100vw / 1930));
   --size-h3: calc(1.25rem + 4 * (100vw / 1930));
   --size-p: calc(1rem + 6 * (100vw / 1930));
+
+  --vh: 1vh;
 }
 .App {
   text-align: center;
