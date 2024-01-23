@@ -3,10 +3,11 @@
     font-weight: bold;
     padding: 18px;
     margin: 0px;
-    border-radius: 50px;
+    border-radius: 40px;
     text-wrap: nowrap;
     cursor: pointer;
     transition: scale 0.2 ease;
+    width: auto;
 }
 .link:active {
     scale: 1.01;

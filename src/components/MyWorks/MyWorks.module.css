@@ -34,7 +34,7 @@
   margin-bottom: 2rem;
 }
 .box {
-  max-width: 100%;
+  min-width: 50%;
   display: inline-block;
   position: absolute;
   background-color: var(--btnAqua);
@@ -44,7 +44,7 @@
   font-weight: bold;
   padding: 18px;
   margin: 0px;
-  border-radius: 50px;
+  border-radius: 40px;
   text-wrap: wrap;
   cursor: pointer;
   transition: scale 0.2 ease;
@@ -61,22 +61,17 @@
   }
 }
 @media (max-width: 1058px) {
-  .box {
-    padding: 10px;
-  }
-}
-@media (max-width: 1058px) {
   .item {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     flex: 0 1 31%;
   }
   .item img {
     width: 100%;
     height: 80%;
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
   }
   .box {
-    padding: 10px;
+    padding: 1rem;
     max-width: 100%;
   }
 }
@@ -85,10 +80,9 @@
     margin-bottom: 2rem;
   }
   .box {
-    padding: auto 10px;
-    border-radius: 30px;
+    padding: 2rem;
+    border-radius: 40px;
     width: 100%;
-    height: 6.5rem;
     position: relative;
     display: flex;
     align-items: center;
@@ -106,8 +100,27 @@
 }
 @media (max-width: 716px) {
   .item {
+    margin: 0;
     flex: 0 1 100%;
+  }
+  .item > a {
+    min-width: 50%;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 631px) {
+  .item {
+    margin-bottom: 1rem;
     padding: 1rem;
+  }
+  .item > a {
+    min-width: 50%;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 501px) {
+  .item {
+    margin-bottom: 2rem;
   }
 }
 @media (max-width: 375px) {
