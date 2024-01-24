@@ -1,5 +1,5 @@
 import styles from "./MyWorks.module.css";
-import arrayWorks from "./arrayWorks";
+import arrayWorks from "../array/arrayWorks";
 
 export default function MyWorks() {
   return (

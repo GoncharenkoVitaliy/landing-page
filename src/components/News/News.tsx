@@ -1,6 +1,6 @@
 import styles from "./News.module.css";
 import Post from "./Post/Post";
-import arrayNews, { iArrayNews } from "./arrayNews";
+import arrayNews, { iArrayNews } from "../array/arrayNews";
 
 export default function News() {
   return (

@@ -1,5 +1,5 @@
 import styles from "./AboutStec.module.css";
-import arrayAbout, { iArrayAbout } from "./arrayAbout";
+import arrayAbout, { iArrayAbout } from "../array/arrayAbout";
 
 export default function AboutStec() {
   return (

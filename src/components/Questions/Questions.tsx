@@ -1,4 +1,4 @@
-import arrayQuestions, { iArrayQuestions } from "./arrayQuestions";
+import arrayQuestions, { iArrayQuestions } from "../array/arrayQuestions";
 import styles from "./Questions.module.css";
 
 export default function Questions() {

@@ -7,13 +7,13 @@ import photo6 from "../images/photo-005-6.jpeg";
 import photo7 from "../images/photo-005-7.jpeg";
 import photo8 from "../images/photo-005-8.jpeg";
 
-interface iImages {
+interface iArrayMagicGallery {
   id: number;
   src: string;
   classNames: string;
 }
 
-const images: iImages[] = [
+const arrayMagicGallery: iArrayMagicGallery[] = [
   { id: 1, src: photo1, classNames: "one" },
   { id: 2, src: photo2, classNames: "two" },
   { id: 3, src: photo3, classNames: "three" },
@@ -24,4 +24,4 @@ const images: iImages[] = [
   { id: 8, src: photo8, classNames: "eight" },
 ];
 
-export default images;
+export default arrayMagicGallery;
