@@ -65,7 +65,7 @@ export default function ContactMe() {
         message: message,
       };
       emailjs
-        .send("service_bfk61em", "template_cp1wp5w", parms, "HwabuzZpB9X61c76V")
+        .send("service_bp7ztlm", "template_h5rihua", parms, "fCc4VSykWCMmG0Khb") // ("service", "template", parms, "Учетная запись => Открытый ключ")
         .then((response) => {
           alert("Сообщение отправлено!!");
         })
